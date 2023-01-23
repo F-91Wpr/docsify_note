@@ -1,0 +1,4 @@
+- [返回上一级 [docs]](docs/大数据/docs/)
+- [clickhouse](docs/大数据/docs/clickhouse/)
+  - [clickhouse](docs/大数据/docs/clickhouse/clickhouse.md)
+  - [安装部署](docs/大数据/docs/clickhouse/安装部署.md)

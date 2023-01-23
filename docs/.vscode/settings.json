@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.excalidraw": "json",
+        "*.excalidrawlib": "json",
+        "time.h": "c",
+        "stdlib.h": "c",
+        "timeb.h": "c",
+        "corecrt.h": "c",
+        "vcruntime.h": "c",
+        "types.h": "c"
+    }
+}
