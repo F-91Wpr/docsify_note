@@ -1,0 +1,12 @@
+{
+  "HomePath": "D:\\31880\\Documents\\docsify_note",
+  "IgnoreFile": [
+
+  ],
+  "IgnoreDir": [
+    ".git"
+  ],
+  "IgnoreDirNameContain": [
+    ".assets"
+  ]
+}
