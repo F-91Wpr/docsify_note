@@ -4,6 +4,7 @@
   - [1_Linux常用命令](docs/Linux/1_Linux常用命令.md)
   - [2_shell语法及常用脚本](docs/Linux/2_shell语法及常用脚本.md)
   - [CRLF和LF](docs/Linux/CRLF和LF.md)
+  - [Linux_CL](docs/Linux/Linux_CL.md)
   - [tools](docs/Linux/tools.md)
   - [vim_guide](docs/Linux/vim_guide.md)
   - [集群时间同步](docs/Linux/集群时间同步.md)
