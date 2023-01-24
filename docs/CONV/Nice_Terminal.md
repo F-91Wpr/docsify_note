@@ -1,6 +1,6 @@
 # Nice_Terminal
 
-本篇为美化终端的教程，参考官方文档、[Scott](https://www.youtube.com/watch?v=VT2L1SXFq9U&t=1237s) 和 [dveaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)。
+本篇为 Windows 终端美化教程，参考官方文档、[Scott](https://www.youtube.com/watch?v=VT2L1SXFq9U&t=1237s) 和 [dveaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)。
 
 Oh My Posh 是一个定制提示符引擎（custom prompt engine），在5.0版本后支持跨平台，因此本配置方案可以从 Windows 迁移到 Linux。（duck不必）。
 
