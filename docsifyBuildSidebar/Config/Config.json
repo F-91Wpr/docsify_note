@@ -5,6 +5,7 @@
   ],
   "IgnoreDir": [
     ".git",
+    ".vscode",
     "docsifyBuildSidebar"
   ],
   "IgnoreDirNameContain": [

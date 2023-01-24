@@ -1,5 +1,4 @@
 - [docs](docs/)
-  - [.vscode](docs/.vscode/)
   - [CONV](docs/CONV/)
     - [Linux_CL](docs/CONV/Linux_CL.md)
     - [Nice_Terminal](docs/CONV/Nice_Terminal.md)
