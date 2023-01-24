@@ -119,5 +119,3 @@
         - [flume](docs/大数据组件/采集组件/Flume/flume.md)
       - [Maxwell](docs/大数据组件/采集组件/Maxwell/)
   - [尚识](docs/尚识.md)
-- [docsifyBuildSidebar](docsifyBuildSidebar/)
-  - [Config](docsifyBuildSidebar/Config/)

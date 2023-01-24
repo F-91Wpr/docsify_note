@@ -4,7 +4,8 @@
 
   ],
   "IgnoreDir": [
-    ".git"
+    ".git",
+    "docsifyBuildSidebar"
   ],
   "IgnoreDirNameContain": [
     ".assets"
