@@ -11,6 +11,7 @@ Oh My Posh 是一个定制提示符引擎（custom prompt engine），在5.0版�
 终端：Windows Terminal
 
 ![图 1](https://cdn.jsdelivr.net/gh/Z-404/imageHost@main/2023/01/MI_20230105_1672930174274.png)  
+![图 1](https://cdn.jsdelivr.net/gh/F-91Wpr/imageHost@main/2023/01/MI_20230124_1674538356273.png)  
 
 ## 安装 Nerd Font
 
