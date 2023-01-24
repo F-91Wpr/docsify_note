@@ -1,14 +1,15 @@
+---
+data: 2023-01-02
+---
 # Nice_Terminal
 
-作者：Zhang
-创建日期：2022年12月31日
+本篇为美化终端的教程，参考官方文档、[Scott](https://www.youtube.com/watch?v=VT2L1SXFq9U&t=1237s) 和 [dveaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)。
+
+Oh My Posh 是一个定制提示符引擎（custom prompt engine），在5.0版本后支持跨平台，因此本配置方案可以从 Windows 迁移到 Linux。（duck不必）。
+
 系统：Windows11
+
 终端：Windows Terminal
-概述：
-    在十月份及之后的一段时间，微软更新了 Windows Terminal 和 WSL，他们似乎变得漂亮且易用。
-    我对此感兴趣，希望籍此改善我在学习过程中跨系统的体验，同时提高我对 Linux shell 的使用能力。 
-    本篇为美化终端的教程，参考官方文档、[Scott](https://www.youtube.com/watch?v=VT2L1SXFq9U&t=1237s) 和 [dveaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)。
-    Oh My Posh 是一个定制提示符引擎（custom prompt engine），在5.0版本后支持跨平台，因此本配置方案可以从 Windows 迁移到 Linux。
 
 ![图 1](https://cdn.jsdelivr.net/gh/Z-404/imageHost@main/2023/01/MI_20230105_1672930174274.png)  
 
@@ -29,7 +30,7 @@ Nerd Fonts 是一个使用大量字体图标来解决程序员在开发过程中
 官方建议 Windows 系统下使用 TTF 可变字重字体。
 </details>
 
-## 获取 PowerShell（Core）
+## 安装 PowerShell（Core）
 
 1. [安装 PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 
@@ -114,7 +115,7 @@ z
     ```
 </details>
 
-## 将"Oh My Posh"加入 Shell
+## 安装 "Oh My Posh"
 
 [Oh My Posh](https://ohmyposh.dev/docs/) 是一个自定义提示符（Prompt）引擎，适用于任何能够使用函数或变量调整提示字符串的 shell。
 
@@ -124,6 +125,10 @@ z
     winget install JanDeDobbeleer.OhMyPosh -s winget
     # 重新启动 shell 以重新加载 PATH
     ```
+
+    注意，在 Windows 中 OhMyPosh 以`oh-my-posh.exe`的形式存在。
+    
+    不要使用`Install-Module`的方式安装 OhMyPosh。
 
 2. 配置主题：[montys](https://ohmyposh.dev/docs/themes#montys)，在`$PROFILE`中添加下行：
 
@@ -204,11 +209,11 @@ z
 
 ## 总结
 
-1. 在 Windows 上不用命令行。废物
-2. 在 Linux 上华而不实，废物
-3. 在 VSCode 中，pwsh 配置花哨会启动异常的。废物
+Power shell 在 Windows 中和 cmd 不完全兼容，在 linux 中也。。。
 
-连个虚拟机挺好用的，传文件就 scp，编辑用 VSCode 远程连接插件。经常来回传文件就下载 WinSCP。
+有一丝诡异
+
+连个虚拟机挺好用的，传文件就 scp（可选 WinSCP），编辑用 VSCode 远程连接插件。
 
 ## code $PROFILE
 
