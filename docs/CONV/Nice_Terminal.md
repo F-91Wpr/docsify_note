@@ -1,11 +1,10 @@
----
-data: 2023-01-02
----
 # Nice_Terminal
 
 本篇为美化终端的教程，参考官方文档、[Scott](https://www.youtube.com/watch?v=VT2L1SXFq9U&t=1237s) 和 [dveaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)。
 
 Oh My Posh 是一个定制提示符引擎（custom prompt engine），在5.0版本后支持跨平台，因此本配置方案可以从 Windows 迁移到 Linux。（duck不必）。
+
+时间：2023-01-02
 
 系统：Windows11
 
@@ -127,7 +126,7 @@ z
     ```
 
     注意，在 Windows 中 OhMyPosh 以`oh-my-posh.exe`的形式存在。
-    
+
     不要使用`Install-Module`的方式安装 OhMyPosh。
 
 2. 配置主题：[montys](https://ohmyposh.dev/docs/themes#montys)，在`$PROFILE`中添加下行：
