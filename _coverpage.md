@@ -2,4 +2,4 @@
 
 > 还不知道写啥
 
-[往下翻](https://note.wasd.ink/#/docs/CONV/Nice_Terminal)
+[往下翻](docs/CONV/Nice_Terminal)
