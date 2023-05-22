@@ -327,7 +327,7 @@ object Pair extends App {
 
 为什么要这么麻烦执行隐式转换，原因是 Scala 中的 Int 类型并不能直接进行比较，因为其没有实现 `Ordered` 特质，真正实现 `Ordered` 特质的是 `RichInt`。
 
-<div align="center"> <img  src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/scala-richInt.png"/> </div>
+<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/scala-richInt.png"/> </div>
 
 
 
@@ -356,4 +356,4 @@ object Pair extends App {
 
 
 
-<div align="center"> <img  src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>
+<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>
