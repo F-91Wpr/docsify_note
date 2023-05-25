@@ -549,4 +549,4 @@ yarn-daemon.sh start resourcemanager
 
 
 [hdfs架构详解(防脑裂fencing机制值得学习)](https://www.cnblogs.com/lushilin/p/11239908.html)
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>
+

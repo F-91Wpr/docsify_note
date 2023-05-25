@@ -233,4 +233,3 @@ hadoop jar /usr/app/hadoop-2.6.0-cdh5.15.2/share/hadoop/mapreduce/hadoop-mapredu
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

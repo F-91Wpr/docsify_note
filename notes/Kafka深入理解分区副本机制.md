@@ -161,4 +161,3 @@ Exception: Replication factor: 3 larger than available brokers: 1.
 2. [Kafka 高性能架构之道](http://www.jasongj.com/kafka/high_throughput/)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

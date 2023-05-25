@@ -176,4 +176,3 @@ HDFS 具有良好的跨平台移植性，这使得其他大数据计算框架都
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

@@ -490,4 +490,3 @@ hbase > get 'magazine','rowkey1','article:content'
 3. [HBase 高階知識](https://www.itread01.com/content/1546245908.html)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

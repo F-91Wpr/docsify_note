@@ -133,4 +133,3 @@ IDEA 默认不支持 Scala 语言的开发，需要通过插件进行扩展。�
 2. https://www.scala-lang.org/download/
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

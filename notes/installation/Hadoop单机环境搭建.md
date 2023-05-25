@@ -262,4 +262,3 @@ cp mapred-site.xml.template mapred-site.xml
 <div align="center"> <img width="700px" src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/hadoop-yarn安装验证.png"/> </div>
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

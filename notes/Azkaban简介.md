@@ -76,4 +76,3 @@ Azkaban 和 Oozie 都是目前使用最为广泛的工作流调度程序，其�
  
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

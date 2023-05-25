@@ -185,4 +185,3 @@ empDF.join(broadcast(deptDF), joinExpression).show()
 1. Matei Zaharia, Bill Chambers . Spark: The Definitive Guide[M] . 2018-02 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

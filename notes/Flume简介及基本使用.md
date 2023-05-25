@@ -375,4 +375,3 @@ flume-ng agent \
 <div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/flume-example-9.png"/> </div>
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

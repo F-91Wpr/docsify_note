@@ -118,4 +118,3 @@ DEVICE=enp0s8
 <div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/virtualbox启用网络.png"/> </div>
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

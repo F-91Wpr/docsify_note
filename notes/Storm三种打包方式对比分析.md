@@ -315,4 +315,3 @@ jar:file:/usr/appjar/storm-hdfs-integration-1.0.jar!/defaults.yaml]
 关于 maven-shade-plugin 的更多配置可以参考： [maven-shade-plugin 入门指南](https://www.jianshu.com/p/7a0e20b30401)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

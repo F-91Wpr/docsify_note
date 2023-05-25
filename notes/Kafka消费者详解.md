@@ -392,4 +392,3 @@ broker 返回给消费者数据的等待时间，默认是 500ms。
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

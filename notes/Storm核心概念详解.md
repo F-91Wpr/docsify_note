@@ -159,4 +159,3 @@ Task 是组成 Component 的代码单元。Topology 启动后，1 个 Component 
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

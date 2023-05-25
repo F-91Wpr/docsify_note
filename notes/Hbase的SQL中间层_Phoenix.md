@@ -241,4 +241,3 @@ public class PhoenixJavaApi {
 1. http://phoenix.apache.org/
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

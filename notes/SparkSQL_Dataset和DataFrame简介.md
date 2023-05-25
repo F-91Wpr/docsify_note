@@ -147,4 +147,3 @@ DataFrame、DataSet 和 Spark SQL 的实际执行流程都是相同的：
 4. [A Tale of Three Apache Spark APIs: RDDs vs DataFrames and Datasets(原文)](https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

@@ -124,4 +124,3 @@ tar -zxvf  azkaban-solo-server-3.70.0.tar.gz
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

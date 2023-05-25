@@ -167,4 +167,3 @@ nohup sh storm logviewer &
 <div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/storm集群搭建2.png"/> </div>
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

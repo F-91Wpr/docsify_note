@@ -279,4 +279,3 @@ scan 'Student', FILTER=>"PrefixFilter('wr')"
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

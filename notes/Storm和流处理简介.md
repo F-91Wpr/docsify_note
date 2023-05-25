@@ -98,4 +98,3 @@ storm 和 Flink 都是真正意义上的实时计算框架。其对比如下：
 2. [流计算框架 Flink 与 Storm 的性能对比](http://bigdata.51cto.com/art/201711/558416.htm)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

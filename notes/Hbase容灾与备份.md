@@ -196,4 +196,3 @@ hbase> restore_snapshot '快照名'
 2. [Apache HBase ™ Reference Guide](http://hbase.apache.org/book.htm)
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

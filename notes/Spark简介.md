@@ -94,4 +94,3 @@ GraphX 是 Spark 中用于图形计算和图形并行计算的新组件。在高
 ##   
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

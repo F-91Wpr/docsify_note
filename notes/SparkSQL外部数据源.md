@@ -499,4 +499,3 @@ df.write.option(“maxRecordsPerFile”, 5000)
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

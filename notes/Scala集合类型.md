@@ -259,4 +259,3 @@ res8: Boolean = false
 3. https://docs.scala-lang.org/overviews/collections/trait-iterable.html
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

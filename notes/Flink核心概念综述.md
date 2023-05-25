@@ -173,4 +173,3 @@ Flink 的所有组件都基于 Actor System 来进行通讯。Actor system是多
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>

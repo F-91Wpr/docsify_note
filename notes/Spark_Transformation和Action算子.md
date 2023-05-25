@@ -418,4 +418,3 @@ sc.parallelize(list).saveAsTextFile("/usr/file/temp")
 
 
 
-<div align="center"> <img  src="https://github.com/heibaiying/BigData-Notes/raw/master/pictures/weixin-desc.png"/> </div>
