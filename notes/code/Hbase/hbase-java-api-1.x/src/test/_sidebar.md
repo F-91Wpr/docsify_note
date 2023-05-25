@@ -1,5 +1,0 @@
-- [返回上一级 [src]](notes/code/Hbase/hbase-java-api-1.x/src/)
-- [test](notes/code/Hbase/hbase-java-api-1.x/src/test/)
-  - [java](notes/code/Hbase/hbase-java-api-1.x/src/test/java/)
-    - [com](notes/code/Hbase/hbase-java-api-1.x/src/test/java/com/)
-      - [heibaiying](notes/code/Hbase/hbase-java-api-1.x/src/test/java/com/heibaiying/)

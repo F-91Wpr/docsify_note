@@ -1,7 +1,0 @@
-- [返回上一级 [spark-streaming-kafka]](notes/code/spark/spark-streaming-kafka/)
-- [src](notes/code/spark/spark-streaming-kafka/src/)
-  - [main](notes/code/spark/spark-streaming-kafka/src/main/)
-    - [scala](notes/code/spark/spark-streaming-kafka/src/main/scala/)
-      - [com](notes/code/spark/spark-streaming-kafka/src/main/scala/com/)
-        - [heibaiying](notes/code/spark/spark-streaming-kafka/src/main/scala/com/heibaiying/)
-          - [kafka](notes/code/spark/spark-streaming-kafka/src/main/scala/com/heibaiying/kafka/)

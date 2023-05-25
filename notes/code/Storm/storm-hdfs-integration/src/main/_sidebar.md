@@ -1,5 +1,0 @@
-- [返回上一级 [src]](notes/code/Storm/storm-hdfs-integration/src/)
-- [main](notes/code/Storm/storm-hdfs-integration/src/main/)
-  - [java](notes/code/Storm/storm-hdfs-integration/src/main/java/)
-    - [com.heibaiying](notes/code/Storm/storm-hdfs-integration/src/main/java/com.heibaiying/)
-      - [component](notes/code/Storm/storm-hdfs-integration/src/main/java/com.heibaiying/component/)

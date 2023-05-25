@@ -1,3 +1,0 @@
-- [返回上一级 [main]](notes/code/Phoenix/spring-mybatis-phoenix/src/main/)
-- [resources](notes/code/Phoenix/spring-mybatis-phoenix/src/main/resources/)
-  - [mappers](notes/code/Phoenix/spring-mybatis-phoenix/src/main/resources/mappers/)

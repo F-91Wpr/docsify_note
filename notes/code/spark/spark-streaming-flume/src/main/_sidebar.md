@@ -1,6 +1,0 @@
-- [返回上一级 [src]](notes/code/spark/spark-streaming-flume/src/)
-- [main](notes/code/spark/spark-streaming-flume/src/main/)
-  - [scala](notes/code/spark/spark-streaming-flume/src/main/scala/)
-    - [com](notes/code/spark/spark-streaming-flume/src/main/scala/com/)
-      - [heibaiying](notes/code/spark/spark-streaming-flume/src/main/scala/com/heibaiying/)
-        - [flume](notes/code/spark/spark-streaming-flume/src/main/scala/com/heibaiying/flume/)

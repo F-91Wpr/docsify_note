@@ -1,6 +1,0 @@
-- [返回上一级 [src]](notes/code/Phoenix/spring-mybatis-phoenix/src/)
-- [test](notes/code/Phoenix/spring-mybatis-phoenix/src/test/)
-  - [java](notes/code/Phoenix/spring-mybatis-phoenix/src/test/java/)
-    - [com](notes/code/Phoenix/spring-mybatis-phoenix/src/test/java/com/)
-      - [heibaiying](notes/code/Phoenix/spring-mybatis-phoenix/src/test/java/com/heibaiying/)
-        - [dao](notes/code/Phoenix/spring-mybatis-phoenix/src/test/java/com/heibaiying/dao/)

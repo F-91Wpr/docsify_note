@@ -1,7 +1,0 @@
-- [返回上一级 [main]](notes/code/Kafka/kafka-basis/src/main/)
-- [java](notes/code/Kafka/kafka-basis/src/main/java/)
-  - [com](notes/code/Kafka/kafka-basis/src/main/java/com/)
-    - [heibaiying](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/)
-      - [consumers](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/consumers/)
-      - [producers](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/producers/)
-        - [partitioners](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/producers/partitioners/)

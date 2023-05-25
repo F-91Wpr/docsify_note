@@ -1,6 +1,0 @@
-- [返回上一级 [main]](notes/code/Flink/flink-kafka-integration/src/main/)
-- [java](notes/code/Flink/flink-kafka-integration/src/main/java/)
-  - [com](notes/code/Flink/flink-kafka-integration/src/main/java/com/)
-    - [heibaiying](notes/code/Flink/flink-kafka-integration/src/main/java/com/heibaiying/)
-      - [bean](notes/code/Flink/flink-kafka-integration/src/main/java/com/heibaiying/bean/)
-      - [sink](notes/code/Flink/flink-kafka-integration/src/main/java/com/heibaiying/sink/)

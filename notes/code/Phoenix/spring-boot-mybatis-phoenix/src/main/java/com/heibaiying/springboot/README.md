@@ -1,4 +1,0 @@
-- [返回上一级 [heibaiying]](notes/code/Phoenix/spring-boot-mybatis-phoenix/src/main/java/com/heibaiying/)
-- [springboot](notes/code/Phoenix/spring-boot-mybatis-phoenix/src/main/java/com/heibaiying/springboot/)
-  - [bean](notes/code/Phoenix/spring-boot-mybatis-phoenix/src/main/java/com/heibaiying/springboot/bean/)
-  - [dao](notes/code/Phoenix/spring-boot-mybatis-phoenix/src/main/java/com/heibaiying/springboot/dao/)

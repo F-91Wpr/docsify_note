@@ -1,3 +1,0 @@
-- [返回上一级 [heibaiying]](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/)
-- [producers](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/producers/)
-  - [partitioners](notes/code/Kafka/kafka-basis/src/main/java/com/heibaiying/producers/partitioners/)
