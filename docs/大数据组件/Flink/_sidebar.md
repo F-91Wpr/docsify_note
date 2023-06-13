@@ -1,5 +1,5 @@
 - [返回上一级 [大数据组件]](docs/大数据组件/)
 - [Flink](docs/大数据组件/Flink/)
-  - [Flink 内存管理](docs/大数据组件/Flink/Flink 内存管理.md)
-  - [Flink 词汇表](docs/大数据组件/Flink/Flink 词汇表.md)
+  - [Flink 内存管理](docs/大数据组件/Flink/Flink%20内存管理.md)
+  - [Flink 词汇表](docs/大数据组件/Flink/Flink%20词汇表.md)
   - [Flink](docs/大数据组件/Flink/Flink.md)
