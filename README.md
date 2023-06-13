@@ -118,7 +118,6 @@
         - [flume](docs/大数据组件/采集组件/Flume/flume.md)
       - [Maxwell](docs/大数据组件/采集组件/Maxwell/)
 - [github.comCyC2018CS-Notes](github.comCyC2018CS-Notes/)
-  - [pics](github.comCyC2018CS-Notes/pics/)
   - [10.1 斐波那契数列](github.comCyC2018CS-Notes/10.1 斐波那契数列.md)
   - [10.2 矩形覆盖](github.comCyC2018CS-Notes/10.2 矩形覆盖.md)
   - [10.3 跳台阶](github.comCyC2018CS-Notes/10.3 跳台阶.md)
