@@ -1,15 +1,16 @@
 {
   "HomePath": "D:\\31880\\Documents\\docsify_note",
   "IgnoreFile": [
-
+    "_coverpage.md"
   ],
   "IgnoreDir": [
     ".git",
     ".vscode",
-    "docsifyBuildSidebar",
-    "_coverpage.md"
+    "docsifyBuildSidebar"
   ],
   "IgnoreDirNameContain": [
-    ".assets"
+    ".assets",
+    "image",
+    "solution"
   ]
 }

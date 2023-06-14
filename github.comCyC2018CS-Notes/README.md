@@ -153,7 +153,6 @@
     - [Socket](github.comCyC2018CS-Notes/网络/Socket.md)
   - [面向对象](github.comCyC2018CS-Notes/面向对象/)
     - [设计模式](github.comCyC2018CS-Notes/面向对象/设计模式/)
-      - [_目录1](github.comCyC2018CS-Notes/面向对象/设计模式/_目录1.md)
       - [目录](github.comCyC2018CS-Notes/面向对象/设计模式/目录.md)
       - [设计模式  - 单例](github.comCyC2018CS-Notes/面向对象/设计模式/设计模式%20%20-%20单例.md)
       - [设计模式 - 中介者](github.comCyC2018CS-Notes/面向对象/设计模式/设计模式%20-%20中介者.md)
