@@ -101,86 +101,172 @@
   <br/>
 </p>
 
-* [系统设计主题：从这里开始](#系统设计主题从这里开始)
-    * [第一步：回顾可扩展性的视频讲座](#第一步回顾可扩展性scalability的视频讲座)
-    * [第二步：回顾可扩展性的文章](#第二步回顾可扩展性文章)
-    * [接下来的步骤](#接下来的步骤)
-* [性能与拓展性](#性能与可扩展性)
-* [延迟与吞吐量](#延迟与吞吐量)
-* [可用性与一致性](#可用性与一致性)
-    * [CAP 理论](#cap-理论)
-        * [CP - 一致性和分区容错性](#cp--一致性和分区容错性)
-        * [AP - 可用性和分区容错性](#ap--可用性与分区容错性)
-* [一致模式](#一致性模式)
-    * [弱一致性](#弱一致性)
-    * [最终一致性](#最终一致性)
-    * [强一致性](#强一致性)
-* [可用模式](#可用性模式)
-    * [故障切换](#故障切换)
-    * [复制](#复制)
-* [域名系统](#域名系统)
-* [CDN](#内容分发网络cdn)
-    * [CDN 推送](#cdn-推送push)
-    * [CDN 拉取](#cdn-拉取pull)
-* [负载均衡器](#负载均衡器)
-    * [工作到备用切换（Active-passive）](#工作到备用切换active-passive)
-    * [双工作切换（Active-active）](#双工作切换active-active)
-    * [四层负载均衡](#四层负载均衡)
-    * [七层负载均衡](#七层负载均衡器)
-    * [水平扩展](#水平扩展)
-* [反向代理（web 服务器）](#反向代理web-服务器)
-    * [负载均衡与反向代理](#负载均衡器与反向代理)
-* [应用层](#应用层)
-    * [微服务](#微服务)
-    * [服务发现](#服务发现)
-* [数据库](#数据库)
-    * [关系型数据库管理系统（RDBMS）](#关系型数据库管理系统rdbms)
-        * [Master-slave 复制集](#主从复制)
-        * [Master-master 复制集](#主主复制)
-        * [联合](#联合)
-        * [分片](#分片)
-        * [非规范化](#非规范化)
-        * [SQL 调优](#sql-调优)
-    * [NoSQL](#nosql)
-        * [Key-value 存储](#键-值存储)
-        * [文档存储](#文档类型存储)
-        * [宽列存储](#列型存储)
-        * [图数据库](#图数据库)
-    * [SQL 还是 NoSQL](#sql-还是-nosql)
-* [缓存](#缓存)
-    * [客户端缓存](#客户端缓存)
-    * [CDN 缓存](#cdn-缓存)
-    * [Web 服务器缓存](#web-服务器缓存)
-    * [数据库缓存](#数据库缓存)
-    * [应用缓存](#应用缓存)
-    * [数据库查询级别的缓存](#数据库查询级别的缓存)
-    * [对象级别的缓存](#对象级别的缓存)
-    * [何时更新缓存](#何时更新缓存)
-        * [缓存模式](#缓存模式)
-        * [直写模式](#直写模式)
-        * [回写模式](#回写模式)
-        * [刷新](#刷新)
-* [异步](#异步)
-    * [消息队列](#消息队列)
-    * [任务队列](#任务队列)
-    * [背压机制](#背压)
-* [通讯](#通讯)
-    * [传输控制协议（TCP）](#传输控制协议tcp)
-    * [用户数据报协议（UDP）](#用户数据报协议udp)
-    * [远程控制调用协议（RPC）](#远程过程调用协议rpc)
-    * [表述性状态转移（REST）](#表述性状态转移rest)
-* [安全](#安全)
-* [附录](#附录)
-    * [2 的次方表](#2-的次方表)
-    * [每个程序员都应该知道的延迟数](#每个程序员都应该知道的延迟数)
-    * [其它的系统设计面试题](#其它的系统设计面试题)
-    * [真实架构](#真实架构)
-    * [公司的系统架构](#公司的系统架构)
-    * [公司工程博客](#公司工程博客)
-* [正在完善中](#正在完善中)
-* [致谢](#致谢)
-* [联系方式](#联系方式)
-* [许可](#许可)
+- [系统设计入门](#系统设计入门)
+  - [目的](#目的)
+    - [学习如何设计大型系统](#学习如何设计大型系统)
+    - [从开源社区学习](#从开源社区学习)
+    - [为系统设计的面试做准备](#为系统设计的面试做准备)
+  - [抽认卡](#抽认卡)
+    - [代码资源：互动式编程挑战](#代码资源互动式编程挑战)
+  - [贡献](#贡献)
+  - [系统设计主题的索引](#系统设计主题的索引)
+  - [学习指引](#学习指引)
+  - [如何处理一个系统设计的面试题](#如何处理一个系统设计的面试题)
+    - [第一步：描述使用场景，约束和假设](#第一步描述使用场景约束和假设)
+    - [第二步：创造一个高层级的设计](#第二步创造一个高层级的设计)
+    - [第三步：设计核心组件](#第三步设计核心组件)
+    - [第四步：扩展设计](#第四步扩展设计)
+    - [预估计算量](#预估计算量)
+    - [相关资源和延伸阅读](#相关资源和延伸阅读)
+  - [系统设计的面试题和解答](#系统设计的面试题和解答)
+    - [设计 Pastebin.com (或者 Bit.ly)](#设计-pastebincom-或者-bitly)
+    - [设计 Twitter 时间线和搜索 (或者 Facebook feed 和搜索)](#设计-twitter-时间线和搜索-或者-facebook-feed-和搜索)
+    - [设计一个网页爬虫](#设计一个网页爬虫)
+    - [设计 Mint.com](#设计-mintcom)
+    - [为一个社交网络设计数据结构](#为一个社交网络设计数据结构)
+    - [为搜索引擎设计一个 key-value 储存](#为搜索引擎设计一个-key-value-储存)
+    - [设计按类别分类的 Amazon 销售排名](#设计按类别分类的-amazon-销售排名)
+    - [在 AWS 上设计一个百万用户级别的系统](#在-aws-上设计一个百万用户级别的系统)
+  - [面向对象设计的面试问题及解答](#面向对象设计的面试问题及解答)
+  - [系统设计主题：从这里开始](#系统设计主题从这里开始)
+    - [第一步：回顾可扩展性（scalability）的视频讲座](#第一步回顾可扩展性scalability的视频讲座)
+    - [第二步：回顾可扩展性文章](#第二步回顾可扩展性文章)
+    - [接下来的步骤](#接下来的步骤)
+  - [性能与可扩展性](#性能与可扩展性)
+    - [来源及延伸阅读](#来源及延伸阅读)
+  - [延迟与吞吐量](#延迟与吞吐量)
+    - [来源及延伸阅读](#来源及延伸阅读-1)
+  - [可用性与一致性](#可用性与一致性)
+    - [CAP 理论](#cap-理论)
+      - [CP ─ 一致性和分区容错性](#cp--一致性和分区容错性)
+      - [AP ─ 可用性与分区容错性](#ap--可用性与分区容错性)
+    - [来源及延伸阅读](#来源及延伸阅读-2)
+  - [一致性模式](#一致性模式)
+    - [弱一致性](#弱一致性)
+    - [最终一致性](#最终一致性)
+    - [强一致性](#强一致性)
+    - [来源及延伸阅读](#来源及延伸阅读-3)
+  - [可用性模式](#可用性模式)
+    - [故障切换](#故障切换)
+      - [工作到备用切换（Active-passive）](#工作到备用切换active-passive)
+      - [双工作切换（Active-active）](#双工作切换active-active)
+    - [缺陷：故障切换](#缺陷故障切换)
+    - [复制](#复制)
+      - [主─从复制和主─主复制](#主从复制和主主复制)
+  - [域名系统](#域名系统)
+    - [缺陷:DNS](#缺陷dns)
+    - [来源及延伸阅读](#来源及延伸阅读-4)
+  - [内容分发网络（CDN）](#内容分发网络cdn)
+    - [CDN 推送（push）](#cdn-推送push)
+    - [CDN 拉取（pull）](#cdn-拉取pull)
+    - [缺陷：CDN](#缺陷cdn)
+    - [来源及延伸阅读](#来源及延伸阅读-5)
+  - [负载均衡器](#负载均衡器)
+    - [四层负载均衡](#四层负载均衡)
+    - [七层负载均衡器](#七层负载均衡器)
+    - [水平扩展](#水平扩展)
+      - [缺陷：水平扩展](#缺陷水平扩展)
+    - [缺陷：负载均衡器](#缺陷负载均衡器)
+    - [来源及延伸阅读](#来源及延伸阅读-6)
+  - [反向代理（web 服务器）](#反向代理web-服务器)
+    - [负载均衡器与反向代理](#负载均衡器与反向代理)
+    - [不利之处：反向代理](#不利之处反向代理)
+    - [来源及延伸阅读](#来源及延伸阅读-7)
+  - [应用层](#应用层)
+    - [微服务](#微服务)
+    - [服务发现](#服务发现)
+    - [不利之处：应用层](#不利之处应用层)
+    - [来源及延伸阅读](#来源及延伸阅读-8)
+  - [数据库](#数据库)
+    - [关系型数据库管理系统（RDBMS）](#关系型数据库管理系统rdbms)
+      - [主从复制](#主从复制)
+        - [不利之处：主从复制](#不利之处主从复制)
+      - [主主复制](#主主复制)
+        - [不利之处： 主主复制](#不利之处-主主复制)
+        - [不利之处：复制](#不利之处复制)
+        - [来源及延伸阅读](#来源及延伸阅读-9)
+      - [联合](#联合)
+        - [不利之处：联合](#不利之处联合)
+        - [来源及延伸阅读：联合](#来源及延伸阅读联合)
+      - [分片](#分片)
+        - [不利之处：分片](#不利之处分片)
+      - [来源及延伸阅读：分片](#来源及延伸阅读分片)
+      - [非规范化](#非规范化)
+        - [不利之处：非规范化](#不利之处非规范化)
+        - [来源及延伸阅读：非规范化](#来源及延伸阅读非规范化)
+      - [SQL 调优](#sql-调优)
+        - [改进模式](#改进模式)
+        - [使用正确的索引](#使用正确的索引)
+        - [避免高成本的联结操作](#避免高成本的联结操作)
+        - [分割数据表](#分割数据表)
+        - [调优查询缓存](#调优查询缓存)
+        - [来源及延伸阅读](#来源及延伸阅读-10)
+    - [NoSQL](#nosql)
+      - [键-值存储](#键-值存储)
+      - [来源及延伸阅读](#来源及延伸阅读-11)
+      - [文档类型存储](#文档类型存储)
+      - [来源及延伸阅读：文档类型存储](#来源及延伸阅读文档类型存储)
+      - [列型存储](#列型存储)
+        - [来源及延伸阅读：列型存储](#来源及延伸阅读列型存储)
+      - [图数据库](#图数据库)
+        - [相关资源和延伸阅读：图](#相关资源和延伸阅读图)
+      - [来源及延伸阅读：NoSQL](#来源及延伸阅读nosql)
+    - [SQL 还是 NoSQL](#sql-还是-nosql)
+        - [来源及延伸阅读：SQL 或 NoSQL](#来源及延伸阅读sql-或-nosql)
+  - [缓存](#缓存)
+    - [客户端缓存](#客户端缓存)
+    - [CDN 缓存](#cdn-缓存)
+    - [Web 服务器缓存](#web-服务器缓存)
+    - [数据库缓存](#数据库缓存)
+    - [应用缓存](#应用缓存)
+    - [数据库查询级别的缓存](#数据库查询级别的缓存)
+    - [对象级别的缓存](#对象级别的缓存)
+    - [何时更新缓存](#何时更新缓存)
+      - [缓存模式](#缓存模式)
+        - [缓存的缺点：](#缓存的缺点)
+      - [直写模式](#直写模式)
+        - [直写模式的缺点：](#直写模式的缺点)
+      - [回写模式](#回写模式)
+        - [回写模式的缺点：](#回写模式的缺点)
+      - [刷新](#刷新)
+        - [刷新的缺点：](#刷新的缺点)
+    - [缓存的缺点：](#缓存的缺点-1)
+    - [相关资源和延伸阅读](#相关资源和延伸阅读-1)
+  - [异步](#异步)
+    - [消息队列](#消息队列)
+    - [任务队列](#任务队列)
+    - [背压](#背压)
+    - [异步的缺点：](#异步的缺点)
+    - [相关资源和延伸阅读](#相关资源和延伸阅读-2)
+  - [通讯](#通讯)
+    - [超文本传输协议（HTTP）](#超文本传输协议http)
+      - [来源及延伸阅读：HTTP](#来源及延伸阅读http)
+    - [传输控制协议（TCP）](#传输控制协议tcp)
+    - [用户数据报协议（UDP）](#用户数据报协议udp)
+      - [来源及延伸阅读：TCP 与 UDP](#来源及延伸阅读tcp-与-udp)
+    - [远程过程调用协议（RPC）](#远程过程调用协议rpc)
+      - [缺点：RPC](#缺点rpc)
+    - [表述性状态转移（REST）](#表述性状态转移rest)
+      - [缺点：REST](#缺点rest)
+    - [RPC 与 REST 比较](#rpc-与-rest-比较)
+      - [来源及延伸阅读：REST 与 RPC](#来源及延伸阅读rest-与-rpc)
+  - [安全](#安全)
+    - [来源及延伸阅读](#来源及延伸阅读-12)
+  - [附录](#附录)
+    - [2 的次方表](#2-的次方表)
+      - [来源及延伸阅读](#来源及延伸阅读-13)
+    - [每个程序员都应该知道的延迟数](#每个程序员都应该知道的延迟数)
+      - [延迟数可视化](#延迟数可视化)
+      - [来源及延伸阅读](#来源及延伸阅读-14)
+    - [其它的系统设计面试题](#其它的系统设计面试题)
+    - [真实架构](#真实架构)
+    - [公司的系统架构](#公司的系统架构)
+    - [公司工程博客](#公司工程博客)
+      - [来源及延伸阅读](#来源及延伸阅读-15)
+  - [正在完善中](#正在完善中)
+  - [致谢](#致谢)
+  - [联系方式](#联系方式)
+  - [许可](#许可)
 
 ## 学习指引
 
@@ -246,10 +332,10 @@
 
 ### 第三步：设计核心组件
 
-对每一个核心组件进行详细深入的分析。举例来说，如果你被问到[设计一个 url 缩写服务](solutions/system_design/pastebin/README.md)，开始讨论：
+对每一个核心组件进行详细深入的分析。举例来说，如果你被问到[设计一个 url 缩写服务](system-design-primer/solutions/system_design/pastebin/README.md)，开始讨论：
 
 * 生成并储存一个完整 url 的 hash
-    * [MD5](solutions/system_design/pastebin/README.md) 和 [Base62](solutions/system_design/pastebin/README.md)
+    * [MD5](system-design-primer/solutions/system_design/pastebin/README.md) 和 [Base62](system-design-primer/solutions/system_design/pastebin/README.md)
     * Hash 碰撞
     * SQL 还是 NoSQL
     * 数据库模型
@@ -289,65 +375,65 @@
 > 普通的系统设计面试题和相关事例的论述，代码和图表。
 >
 
-> 与内容有关的解答在 `solutions/` 文件夹中。
+> 与内容有关的解答在 `system-design-primer/solutions/` 文件夹中。
 
 | 问题                                       |                                          |
 | ---------------------------------------- | ---------------------------------------- |
-| 设计 Pastebin.com (或者 Bit.ly)              | [解答](solutions/system_design/pastebin/README-zh-Hans.md) |
-| 设计 Twitter 时间线和搜索 (或者 Facebook feed 和搜索) | [解答](solutions/system_design/twitter/README.md) |
-| 设计一个网页爬虫                                 | [解答](solutions/system_design/web_crawler/README.md) |
-| 设计 Mint.com                              | [解答](solutions/system_design/mint/README.md) |
-| 为一个社交网络设计数据结构                            | [解答](solutions/system_design/social_graph/README.md) |
-| 为搜索引擎设计一个 key-value 储存                   | [解答](solutions/system_design/query_cache/README.md) |
-| 通过分类特性设计 Amazon 的销售排名                    | [解答](solutions/system_design/sales_rank/README.md) |
-| 在 AWS 上设计一个百万用户级别的系统                     | [解答](solutions/system_design/scaling_aws/README.md) |
+| 设计 Pastebin.com (或者 Bit.ly)              | [解答](system-design-primer/solutions/system_design/pastebin/README-zh-Hans.md) |
+| 设计 Twitter 时间线和搜索 (或者 Facebook feed 和搜索) | [解答](system-design-primer/solutions/system_design/twitter/README.md) |
+| 设计一个网页爬虫                                 | [解答](system-design-primer/solutions/system_design/web_crawler/README.md) |
+| 设计 Mint.com                              | [解答](system-design-primer/solutions/system_design/mint/README.md) |
+| 为一个社交网络设计数据结构                            | [解答](system-design-primer/solutions/system_design/social_graph/README.md) |
+| 为搜索引擎设计一个 key-value 储存                   | [解答](system-design-primer/solutions/system_design/query_cache/README.md) |
+| 通过分类特性设计 Amazon 的销售排名                    | [解答](system-design-primer/solutions/system_design/sales_rank/README.md) |
+| 在 AWS 上设计一个百万用户级别的系统                     | [解答](system-design-primer/solutions/system_design/scaling_aws/README.md) |
 | 添加一个系统设计问题                               | [贡献](#贡献)                                |
 
 ### 设计 Pastebin.com (或者 Bit.ly)
 
-[查看实践与解答](solutions/system_design/pastebin/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/pastebin/README.md)
 
 ![Imgur](images/4edXG0T.png)
 
 ### 设计 Twitter 时间线和搜索 (或者 Facebook feed 和搜索)
 
-[查看实践与解答](solutions/system_design/twitter/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/twitter/README.md)
 
 ![Imgur](images/jrUBAF7.png)
 
 ### 设计一个网页爬虫
 
-[查看实践与解答](solutions/system_design/web_crawler/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/web_crawler/README.md)
 
 ![Imgur](images/bWxPtQA.png)
 
 ### 设计 Mint.com
 
-[查看实践与解答](solutions/system_design/mint/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/mint/README.md)
 
 ![Imgur](images/V5q57vU.png)
 
 ### 为一个社交网络设计数据结构
 
-[查看实践与解答](solutions/system_design/social_graph/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/social_graph/README.md)
 
 ![Imgur](images/cdCv5g7.png)
 
 ### 为搜索引擎设计一个 key-value 储存
 
-[查看实践与解答](solutions/system_design/query_cache/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/query_cache/README.md)
 
 ![Imgur](images/4j99mhe.png)
 
 ### 设计按类别分类的 Amazon 销售排名
 
-[查看实践与解答](solutions/system_design/sales_rank/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/sales_rank/README.md)
 
 ![Imgur](images/MzExP06.png)
 
 ### 在 AWS 上设计一个百万用户级别的系统
 
-[查看实践与解答](solutions/system_design/scaling_aws/README.md)
+[查看实践与解答](system-design-primer/solutions/system_design/scaling_aws/README.md)
 
 ![Imgur](images/jj3A5N8.png)
 
@@ -355,18 +441,18 @@
 
 > 常见面向对象设计面试问题及实例讨论，代码和图表演示。
 >
-> 与内容相关的解决方案在 `solutions/` 文件夹中。
+> 与内容相关的解决方案在 `system-design-primer/solutions/` 文件夹中。
 
 >**注：此节还在完善中**
 
 | 问题           |                                          |
 | ------------ | ---------------------------------------- |
-| 设计 hash map  | [解决方案](solutions/object_oriented_design/hash_table/hash_map.ipynb) |
-| 设计 LRU 缓存    | [解决方案](solutions/object_oriented_design/lru_cache/lru_cache.ipynb) |
-| 设计一个呼叫中心     | [解决方案](solutions/object_oriented_design/call_center/call_center.ipynb) |
-| 设计一副牌        | [解决方案](solutions/object_oriented_design/deck_of_cards/deck_of_cards.ipynb) |
-| 设计一个停车场      | [解决方案](solutions/object_oriented_design/parking_lot/parking_lot.ipynb) |
-| 设计一个聊天服务     | [解决方案](solutions/object_oriented_design/online_chat/online_chat.ipynb) |
+| 设计 hash map  | [解决方案](system-design-primer/solutions/object_oriented_design/hash_table/hash_map.ipynb) |
+| 设计 LRU 缓存    | [解决方案](system-design-primer/solutions/object_oriented_design/lru_cache/lru_cache.ipynb) |
+| 设计一个呼叫中心     | [解决方案](system-design-primer/solutions/object_oriented_design/call_center/call_center.ipynb) |
+| 设计一副牌        | [解决方案](system-design-primer/solutions/object_oriented_design/deck_of_cards/deck_of_cards.ipynb) |
+| 设计一个停车场      | [解决方案](system-design-primer/solutions/object_oriented_design/parking_lot/parking_lot.ipynb) |
+| 设计一个聊天服务     | [解决方案](system-design-primer/solutions/object_oriented_design/online_chat/online_chat.ipynb) |
 | 设计一个环形数组     | [待解决](#贡献)                     |
 | 添加一个面向对象设计问题 | [待解决](#贡献)                     |
 
