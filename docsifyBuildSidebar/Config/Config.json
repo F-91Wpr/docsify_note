@@ -6,7 +6,8 @@
   "IgnoreDir": [
     ".git",
     ".vscode",
-    "docsifyBuildSidebar"
+    "docsifyBuildSidebar",
+    "other"
   ],
   "IgnoreDirNameContain": [
     ".assets",
